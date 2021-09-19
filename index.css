@@ -1,0 +1,271 @@
+body{
+    font-size: 1.25rem;
+    background: none repeat scroll 0 0 #2f3335;
+    /* color: #fff; */
+    color: rgb(232, 230, 227);
+    font-family: Helvetica Neue LT W06_35 Thin,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* font-family: Helvetica Neue LT W06_35 Thin,Helvetica Neue,Helvetica,Arial,sans-serif; */
+    /* overflow-x: hidden;
+    line-height: 1.4;
+    letter-spacing: .3px; */
+}
+/* z */
+.heading-container{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5625rem auto 0;
+    width: 75%;
+}
+/* .swiper-wrapper{
+    transition-duration: 0ms;
+    transform: translate3d(208.5px, 0px, 0px);
+    perspective-origin: 220px 50%;
+} */
+
+.swiper-heading {
+    color: rgb(232, 230, 227);
+    font-weight: 200;
+    display: inline-block;
+    position: relative;
+    line-height: 27px;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.swiper-ctn{
+    background-image: url("https://www.laprairie.com/dw/image/v2/AAOT_PRD/on/demandware.static/-/Library-Sites-LaPrairieSharedLibrary/default/dw1da0bc21/TheHouse/mountains.jpg?sw=2000&cx=250&cy=0&cw=2865&ch=2700");
+    background-position: 100% 38%;
+    top: 33px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-btn-next{
+    top:560px
+}
+.swiper-btn-prev{
+    top:560px
+}
+
+.swiper-slide{
+    background-color: #f0f0f0;
+    width: 400px;
+    height: 400px;
+    /* @media screen and (min-width: 768px){
+        width: 200px;
+    } */
+}
+    .swiper-slide:active{
+        /* background-color: #bd1701; */
+        width: 500px;
+        height: 250px;
+   
+    }
+
+
+.swiper-slide{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: auto; */
+    flex-shrink: 0;
+    display: block;
+    /* height: 500px; */
+    min-height: 400px;
+    width: 400px;
+}
+
+
+.swiper-slide-active{
+    height: 400px;
+    width: 450px;
+}
+
+.sub-heading-container {
+    flex-direction: column;
+    margin: 20px auto 0;
+    /* display: -ms-flexbox; */
+    display: flex;
+    width: 62%;
+    position:relative;
+    top:500px;
+    /* -ms-flex-pack: center; */
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: Helvetica Neue LT W06_35 Thin,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.sub-heading{
+    
+    top: 200px;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+ .cta {
+    width: 220px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 1.5rem auto .625rem;
+    height: 40px;
+    padding: .625rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 18px;
+    color: #fff;
+}
+
+
+.help-section{
+    margin-top:100px;
+}
+
+.content-asset{
+    text-align: center;
+}
+
+.can-we-help{
+    font-family: Helvetica Neue LT W06_25 UltLt,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* font-size: 22px; */
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 26px;
+    /* color: #e8e6e3; */
+    color: rgb(232, 230, 227);
+}
+
+.helpSectionContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info{
+    /* margin-top: 1.25rem; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info__element{
+    margin: 1.5625rem 1.5625rem 0;
+}
+
+.phone span{
+    font-size: 1.125rem;
+    /* color: #e8e6e3; */
+}
+.contact{
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-decoration: none;
+    color: #e8e6e3;
+}
+
+.breaker{
+    margin-top:40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    border:0.3px solid grey;
+    
+}
+
+.newsletter-signup{
+    display: flex;
+    justify-content: space-between;
+    margin-right:10%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+}
+
+.newsletter-signup__content{
+    
+    flex:50%;
+}
+
+.newsletter-signup-heading{
+    text-align: left;
+    /* color: #e8e6e3; */
+}
+
+.newsletter-signup-subheading{
+    text-align: left;
+    /* color: #e8e6e3; */
+    font-size: 1.125rem;
+}
+
+.newsletter-signup__content form{
+    width: 100%;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: 2.3125rem;
+    display:flex
+}
+
+.newsletter-signup-form-label {
+    font-size: 18px;
+    /* color: #bbcac6; */
+    position: absolute;
+    bottom: 4px;
+    left: 2px;
+    transition: all ease-in-out 0.2s;
+    background: transparent;
+  }
+  .newsletter-signup-form-label-shifted {
+    font-size: 13px;
+    /* color: #bbcac6; */
+    transform: translateY(-30px);
+    transition: all ease-in-out 0.2s;
+    background: transparent;
+    left: 4px;
+  }
+  .newsletter-signup-form-label-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+    background: transparent;
+    margin: 0px 0px 40px;
+  }
+  input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    padding: 4px;
+  }
+  input[type="text"]:focus, 
+  input[type="password"]:focus {
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #bbcac6;
+  }
+  
+  .store-heading{
+      text-align: left;
+      /* color: #e8e6e3; */
+  }
+  .store-subheading{
+
+    font-size: 1.125rem;
+    /* color: #e8e6e3; */
+  }
+
+  .location-bottom-text{
+    color: #e8e6e3;
+    text-decoration: none;
+  }

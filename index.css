@@ -17,13 +17,15 @@ body{
     justify-content: center;
     text-align: center;
     margin: 1.5625rem auto 0;
-    width: 75%;
+    width: 90%;
 }
 /* .swiper-wrapper{
     transition-duration: 0ms;
     transform: translate3d(208.5px, 0px, 0px);
     perspective-origin: 220px 50%;
 } */
+
+
 
 .swiper-heading {
     color: rgb(232, 230, 227);
@@ -38,7 +40,7 @@ body{
 }
 
 .swiper-ctn{
-    background-image: url("https://www.laprairie.com/dw/image/v2/AAOT_PRD/on/demandware.static/-/Library-Sites-LaPrairieSharedLibrary/default/dw1da0bc21/TheHouse/mountains.jpg?sw=2000&cx=250&cy=0&cw=2865&ch=2700");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://www.laprairie.com/dw/image/v2/AAOT_PRD/on/demandware.static/-/Library-Sites-LaPrairieSharedLibrary/default/dw1da0bc21/TheHouse/mountains.jpg?sw=2000&cx=250&cy=0&cw=2865&ch=2700");
     background-position: 100% 38%;
     top: 33px;
     bottom: 0;
@@ -96,11 +98,11 @@ body{
     display: flex;
     width: 62%;
     position:relative;
-    top:500px;
+    /* top:500px; */
     /* -ms-flex-pack: center; */
     justify-content: center;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
     font-family: Helvetica Neue LT W06_35 Thin,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -117,7 +119,7 @@ body{
     border: 1px solid #fff;
     border-radius: 2px;
     margin: 1.5rem auto .625rem;
-    height: 40px;
+    height: 20px;
     padding: .625rem 0;
     font-size: 1rem;
     font-weight: 300;

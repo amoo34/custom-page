@@ -70,10 +70,15 @@ var interleaveEffect = {
         // slideShadows : true, // Enables slides shadows
         // height:300,
         rotate: 0,
-		stretch: 0,
-		depth: 200,
-		modifier: 1,
-		slideShadows: true,
+			stretch: 100,
+			depth: 150,
+			modifier: 1.2,
+			slideShadows : false,
+        // rotate: 0,
+		// stretch: 0,
+		// depth: 200,
+		// modifier: 1,
+		// slideShadows: true,
       },
     
     // If we need pagination
@@ -95,28 +100,49 @@ var interleaveEffect = {
 			slidesPerView: 4
 		}
 	},
+
+    on: {
+      
+        slideChange: function() {
+            console.log("Slide change",this.snapIndex)
+            const title = document.getElementById("js-title")
+            const name = document.getElementById("js-name")
+            const description = document.getElementById("js-description")
+            console.log(title,title.value)
+            switch(this.snapIndex){
+                
+                case 0:
+                    title.innerHTML = "LA PRAIRIE X MAOTIK"
+                    description.innerHTML = "A digital voyage to the realms of the night"
+                    break;
+                case 1:
+                    console.log(this.snapIndex)
+                    title.innerHTML = "THE ARTIST RESIDENCY"
+                    description.innerHTML = "A retreat at the summit"
+                    break;
+                case 2:
+                    title.innerHTML = "LA PRAIRIE X ECAL"
+                    description.innerHTML = "Supporting young talents"
+                    break;
+                case 3:
+                    title.innerHTML = "THE ARTIST RESIDENCY"
+                    description.innerHTML = "A retreat at the summit"
+                    break;
+                case 4:
+                    title.innerHTML = "LA PRAIRIE X ECAL"
+                    description.innerHTML = "Supporting young talents"
+                    break;
+            }
+            
+        },
+      }
   };
 
   swiperOptions = $.extend(swiperOptions);
 
   const swiper = new Swiper('.swiper', swiperOptions);
 
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     effect: "coverflow",
 
-//     slidesPerView: 'auto',
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   });
 
 
 // document.getElementById("two").addEventListener("click", function() {

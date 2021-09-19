@@ -109,31 +109,15 @@ var interleaveEffect = {
             const title = document.getElementById("js-title")
             const name = document.getElementById("js-name")
             const description = document.getElementById("js-description")
-            console.log(title,title.value)
-            switch(this.snapIndex){
-                
-                case 0:
-                    title.innerHTML = "LA PRAIRIE X MAOTIK"
-                    description.innerHTML = "A digital voyage to the realms of the night"
-                    break;
-                case 1:
-                    console.log(this.snapIndex)
-                    title.innerHTML = "THE ARTIST RESIDENCY"
-                    description.innerHTML = "A retreat at the summit"
-                    break;
-                case 2:
-                    title.innerHTML = "LA PRAIRIE X ECAL"
-                    description.innerHTML = "Supporting young talents"
-                    break;
-                case 3:
-                    title.innerHTML = "THE ARTIST RESIDENCY"
-                    description.innerHTML = "A retreat at the summit"
-                    break;
-                case 4:
-                    title.innerHTML = "LA PRAIRIE X ECAL"
-                    description.innerHTML = "Supporting young talents"
-                    break;
+            for(let i = 0;i<this.slides.length;i++){
+                if(this.snapIndex === i){
+                    document.getElementById(this.snapIndex).style.display = "flex"
+                }
+                else{
+                    document.getElementById(i).style.display = "none"
+                }
             }
+
             
         },
       }

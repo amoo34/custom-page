@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/*
+
+Project Name: Events timeline slider with Swiper Slider
+Project URI: http://www.onyxdev.net/snippets-item/events-timeline-slider-swiper-slider/
+Author: Onyx Web Development Nuggets
+Author URI: https://www.onyxdev.net
+Version: 1.0
+
+*/
+
+
+/************************************************************
+
+	Main Styles
+
+*************************************************************/
+body {
+	font-family: 'Poppins', Arial, sans-serif;
+	letter-spacing: normal;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-color: #6d589d;
+}
+
+
+
+/************************************************************
+
+	Common elements
+
+*************************************************************/
+
+
+/* Transitions
+*************************************/
+.timeline-button-next,
+.timeline-button-prev {
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		 -o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+}
+.timeline-dates .swiper-slide:after,
+.timeline-dates .swiper-slide div {
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		 -o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+}
+
+
+
+/************************************************************
+
+	Wrapper
+
+*************************************************************/
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.body-content {
+    margin: 50px;
+}
+
+h4 {
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: capitalize;
+}
+h5 {
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+p {
+	color: #bfa9f0;
+	font-size: 13px;
+}
+
+
+
+/************************************************************
+
+	Timeline
+
+*************************************************************/
+.timeline {
+	padding: 0 2rem;
+}
+.timeline-dates {
+    padding-bottom: .5rem;
+    box-sizing: border-box;
+    margin: 3rem 0 3.5rem;
+}
+.timeline-dates .swiper-slide {
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Times New Roman', serif;
+	font-weight: bold;
+	font-style: italic;
+	min-height: 37px;
+    width: auto;
+    height: 100%;
+}
+.timeline-dates .swiper-slide div {
+	position: relative;
+	font-size: 1.5rem;
+    opacity: 0.4;
+    top: 0;
+}
+.timeline-dates .swiper-slide-active div {
+	font-size: 2rem;
+    opacity: 1;
+    top: -.5rem;
+}
+.timeline-dates.swiper-container:after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	position: absolute;
+    bottom: .3rem;
+    opacity: .5;
+    border-bottom: 2px dotted #e39034;
+}
+.timeline-dates .swiper-slide:after {
+	content: "";
+	width: .4rem;
+	height: .4rem;
+	position: absolute;
+    bottom: -.55rem;
+    background-color: #ffaa88;
+    border-radius: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateY(-50%);
+}
+.timeline-dates .swiper-slide-active:after {
+    background-color: #e39034;
+
+}
+
+.timeline-contents {
+    height: 80%;
+    width: 100%;
+}
+
+/* Arrows */
+.timeline-buttons-container {
+    position: absolute;
+    top: 149px;
+    right: 1.5rem;
+    left: 1.5rem;
+}
+.timeline-button-next,
+.timeline-button-prev {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    z-index: 2;
+    cursor: pointer;
+    background-color: #e39034;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    padding: 5px;
+}
+.timeline-button-next {
+    right: 0;
+}
+.timeline-button-prev {
+    left: 0;
+}
+.timeline-button-next:hover,
+.timeline-button-prev:hover {
+    background-color: #fff;
+}
+.timeline-button-next:before,
+.timeline-button-prev:before {
+	font-family: "Ionicons";
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 52%;
+	transform: translate(-50%,-50%);
+	margin-right: -50%;
+}
+.timeline-button-next:before {
+	content: "\f10a";
+	left: 53%;
+}
+.timeline-button-prev:before {
+	content: "\f107";
+	left: 47%;
+}
+.timeline-button-next:hover:before,
+.timeline-button-prev:hover:before {
+	color: #e39034;
+}
+

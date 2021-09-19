@@ -61,6 +61,7 @@ var interleaveEffect = {
 	// slidesPerView: 'auto',
     // width:'auto',
     spaceBetween: 0,
+    slideToClickedSlide:true,
     coverflowEffect: {
         // rotate: 0, // Slide rotate in degrees
         // stretch: 0, // Stretch space between slides (in px)
@@ -142,38 +143,6 @@ var interleaveEffect = {
 
   const swiper = new Swiper('.swiper', swiperOptions);
 
-
-
-
-// document.getElementById("two").addEventListener("click", function() {
-//     console.log("ss")
-//     // document.getElementById("demo").innerHTML = "Hello World";
-//     let y = document.getElementById("one")
-//     let x = document.getElementById("two")
-//     let z = document.getElementById("three")
-//     let c = document.getElementById("four")
-//     let five = document.getElementById("five")
-//     let six = document.getElementById("six")
-//     let seven = document.getElementById("seven")
-//     let eight = document.getElementById("eight")
-//     let swiper = document.getElementById("swiper-wrapper")
-
-//     y.style.transform = "translate3d(340px, 0px, -150px) rotateX(0deg) rotateY(0deg)"
-//     y.style.zIndex = 0
-//     y.style.width = 391
-//     y.style.height = 445
-//     x.style.transform = "translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg)"
-//     x.style.zIndex = 1
-//     z.style.transform = "translate3d(-340px, 0px, -150px) rotateX(0deg) rotateY(0deg)"
-//     c.style.transform = "translate3d(-680px, 0px, -300px) rotateX(0deg) rotateY(0deg)"
-//     five.style.transform = "translate3d(-1020px, 0px, -450px) rotateX(0deg) rotateY(0deg)"
-//     six.style.transform = "translate3d(-1360px, 0px, -600px) rotateX(0deg) rotateY(0deg)"
-//     seven.style.transform = "translate3d(-1700px, 0px, -750px) rotateX(0deg) rotateY(0deg)"
-//     eight.style.transform = "translate3d(-2040px, 0px, -900px) rotateX(0deg) rotateY(0deg)"
-
-//     swiper.style.perspectiveOrigin = "660px 50%"
-//     swiper.style.transform = "translate3d(-204.5px, 0px, 0px)"
-// });
 
 
 var kaSwiper1 = new Swiper ('#ka-swiper1', {

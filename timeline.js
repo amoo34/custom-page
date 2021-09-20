@@ -3,6 +3,10 @@ var timelineSwiper = new Swiper ('.swiper', {
   direction: 'vertical',
   loop: false,
   speed: 1600,
+  effect:'cards',
+//   hashNavigation: {
+//     replaceState: true,
+//   },
 //   dynamicBullets:true,
   forceToAxis:true,
 //   paginationType: "custom",
@@ -24,7 +28,9 @@ scrollbar: {
     renderBullet: function (index, className) {
         console.log("ssss")
       var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-      return '<span class="' + className + '">' + year + '</span>';
+      return `<span class=${className} style="display:flex"> -
+      <span style="margin-left:10px" >${year}</span>
+      </span>`;
     },
   },
   breakpoints: {

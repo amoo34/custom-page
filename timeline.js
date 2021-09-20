@@ -4,13 +4,16 @@ var timelineSwiper = new Swiper ('.swiper', {
   loop: false,
   speed: 1600,
 //   dynamicBullets:true,
-//   forceToAxis:true,
+  forceToAxis:true,
 //   paginationType: "custom",
 
 //   paginationClickable: true,
 //   nextButton: '.swiper-button-next',
 //   prevButton: '.swiper-button-prev',
-
+scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     // dynamicBullets: true,

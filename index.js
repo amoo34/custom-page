@@ -55,7 +55,7 @@ var interleaveEffect = {
 	// slidesPerView: 1,
 	// loop: true,
     // width:1340,
-	speed: 600,
+	speed: 1600,
     grabCursor: true,
 	centeredSlides: true,
 	// slidesPerView: 'auto',
@@ -63,23 +63,11 @@ var interleaveEffect = {
     spaceBetween: 0,
     slideToClickedSlide:true,
     coverflowEffect: {
-        // rotate: 0, // Slide rotate in degrees
-        // stretch: 0, // Stretch space between slides (in px)
-        // depth: 100, // Depth offset in px (slides translate in Z axis)
-        // modifier: 1, // Effect multipler
-        // slidesPerView:'auto',
-        // slideShadows : true, // Enables slides shadows
-        // height:300,
         rotate: 0,
 			stretch: 100,
 			depth: 150,
 			modifier: 1.2,
 			slideShadows : false,
-        // rotate: 0,
-		// stretch: 0,
-		// depth: 200,
-		// modifier: 1,
-		// slideShadows: true,
       },
     
     // If we need pagination

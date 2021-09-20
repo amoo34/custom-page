@@ -24,6 +24,8 @@ body {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
+  background-image: url("https://www.laprairie.com/on/demandware.static/Sites-LaPrairie_GB-Site/-/en_GB/images/the-house/Background-timeline.png");
+    background-size: cover;
 }
 .timeline .swiper {
   height: 600px;
@@ -56,14 +58,33 @@ body {
 .timeline .swiper-slide-content {
   position: absolute;
   text-align: center;
-  width: 80%;
-  max-width: 310px;
-  right: 50%;
+  width: 100%;
+  /* max-width: 310px; */
+  /* right: 50%; */
   top: 13%;
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
   font-size: 12px;
   z-index: 2;
+}
+.timeline-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 426px;
+}
+
+.timeline-image-section{
+    display: flex;
+    align-items:center;
+    width: 36%;
+    position:relative
+}
+
+.timeline-wrapper .timeline-content .timeline-image-section {
+    
+    height: auto;
+    margin-right: 5%;
 }
 .timeline .swiper-slide .timeline-year {
   display: block;
@@ -112,7 +133,8 @@ body {
   transition: .4s ease 1.8s;
 }
 .timeline .swiper-pagination {
-  right: 15% !important;
+  /* right: 15% !important;
+  left:5%; */
   height: 100%;
   display: none;
   flex-direction: column;
@@ -131,13 +153,16 @@ body {
   width: 1px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+    left:5%;
+}
 .timeline .swiper-pagination-bullet {
-  width: auto;
+  /* width: auto; */
   height: auto;
   text-align: center;
   opacity: 1;
   background: transparent;
-  color: #d4a024;
+  color: #fff;
   margin: 15px 0 !important;
   position: relative;
 }
@@ -149,13 +174,13 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  background-color: #d4a024;
+  background-color: #fff;
   -webkit-transform: scale(0);
           transform: scale(0);
   transition: .2s;
 }
 .timeline .swiper-pagination-bullet-active {
-  color: #d4a024;
+  color: #fff;
 }
 .timeline .swiper-pagination-bullet-active::before {
   -webkit-transform: scale(1);
@@ -196,13 +221,13 @@ body {
     box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
   }
   .timeline .swiper-slide-content {
-    right: 30%;
+    /* right: 30%; */
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 310px;
+    width: 100%;
     font-size: 11px;
-    text-align: right;
+    text-align: left;
   }
   .timeline .swiper-slide .timeline-year {
     margin-bottom: 0;
@@ -217,8 +242,8 @@ body {
   }
   .timeline .swiper-button-prev {
     top: 15%;
-    left: auto;
-    right: 15%;
+    left: 5%;
+    /* right: 15%; */
     -webkit-transform: rotate(90deg) translate(0, 10px);
             transform: rotate(90deg) translate(0, 10px);
   }
@@ -229,7 +254,8 @@ body {
   .timeline .swiper-button-next {
     top: auto;
     bottom: 15%;
-    right: 15%;
+    /* right: 15%; */
+    left:5%;
     -webkit-transform: rotate(90deg) translate(0, 10px);
             transform: rotate(90deg) translate(0, 10px);
   }
@@ -247,6 +273,9 @@ body {
     box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
   }
   .timeline .swiper-slide-content {
-    right: 25%;
+      display:flex;
+      justify-content:center;
+    /* right: 25%; */
+    height:600px;
   }
 }

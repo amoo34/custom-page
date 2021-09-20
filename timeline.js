@@ -8,8 +8,15 @@ var timelineSwiper = new Swiper ('.swiper', {
 //     replaceState: true,
 //   },
 //   dynamicBullets:true,
-  forceToAxis:true,
+//   forceToAxis:true,
 //   paginationType: "custom",
+// slidesPerView: "auto",
+// freeMode: true,
+loop: true,
+// loopedSlides: 8, // according to the codepen
+mousewheel: {
+  releaseOnEdges: true,
+},
 
 //   paginationClickable: true,
 //   nextButton: '.swiper-button-next',

@@ -195,6 +195,9 @@ body {
     display:flex;
     opacity:1
   }
+  .timeline .swiper-pagination-bullet-active .line {
+    width:25px;
+  }
 .timeline .swiper-pagination-bullet-active::before {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -348,4 +351,16 @@ body {
 .swiper-pagination-bullet:hover span{
     display:flex;
     opacity:1;
+}
+
+.swiper-pagination-bullet:hover .line{
+    width: 25px;
+}
+
+.line{
+    width: 10px;
+    margin-top: 13px;
+    background-color:#fff;
+    height:1px;
+    transition:0.3s
 }

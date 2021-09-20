@@ -28,7 +28,8 @@ scrollbar: {
     renderBullet: function (index, className) {
         console.log("ssss")
       var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-      return `<span class=${className} style="display:flex"> -
+      return `<span class=${className} style="display:-webkit-inline-box"> 
+      <p class="line"></p>
       <span style="margin-left:10px" >${year}</span>
       </span>`;
     },

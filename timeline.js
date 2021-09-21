@@ -4,9 +4,9 @@ let desktop = window.matchMedia("(min-width: 1025px)");
 
 let swiper = undefined;
 
-function swiperMode() {
-  console.log(mobile.matches);
-  if (!mobile.matches) {
+// function swiperMode() {
+//   console.log(mobile.matches);
+//   if (!mobile.matches) {
     swiper = new Swiper(".swiper", {
       // scrollbar: {
       //     el: '.swiper-scrollbar',
@@ -45,22 +45,22 @@ function swiperMode() {
         }
       },
     });
-  } else if (mobile.matches) {
-    console.log("Mobile match", swiper);
-    if (swiper !== undefined) {
-      swiper.destroy(true, true);
-    }
+  // } else if (mobile.matches) {
+  //   console.log("Mobile match", swiper);
+  //   if (swiper !== undefined) {
+  //     swiper.destroy(true, true);
+  //   }
     // swiper.detachEvents()
-  }
-}
+//   }
+// }
 
-window.addEventListener("load", function () {
-  swiperMode();
-});
+// window.addEventListener("load", function () {
+//   swiperMode();
+// });
 
-window.addEventListener("resize", function () {
-  swiperMode();
-});
+// window.addEventListener("resize", function () {
+//   swiperMode();
+// });
 
 
 

@@ -3576,7 +3576,7 @@ body {
       align-items: center;
       width: 100%;
       height: 600px;
-      position: absolute;
+      /* position: absolute; */
       z-index: 0;
       /* background-image: url(../images); */
     }

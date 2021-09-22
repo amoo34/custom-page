@@ -2466,7 +2466,7 @@ body {
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      position: absolute;
+      /* position: absolute; */
       bottom: 25px;
     }
     
@@ -3557,8 +3557,8 @@ body {
       flex-direction: column;
       -webkit-flex-direction: column;
       justify-content: center;
-      width: 100%;
-      position: absolute;
+      width: 60%;
+      /* position: absolute; */
       bottom: 25px;
     }
     
